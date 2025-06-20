@@ -1,0 +1,102 @@
+# Cache headers para otimização de performance
+
+# Assets estáticos com hash - Cache por 1 ano
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Assets sem hash - Cache por 1 semana
+/*.css
+  Cache-Control: public, max-age=604800
+
+/*.js
+  Cache-Control: public, max-age=604800
+
+# Imagens do diretório raiz - Cache por 1 mês
+/*.png
+  Cache-Control: public, max-age=2592000
+  Content-DPR: 1.0
+
+/*.jpg
+  Cache-Control: public, max-age=2592000
+  Content-DPR: 1.0
+
+/*.jpeg
+  Cache-Control: public, max-age=2592000
+  Content-DPR: 1.0
+
+/*.webp
+  Cache-Control: public, max-age=2592000
+  Content-DPR: 1.0
+
+# Imagens LCP - Cache agressivo mas com revalidação
+/*-lcp.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+  Priority: high
+
+# Imagens responsivas - Cache agressivo
+/*-150.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+
+/*-300.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+
+/*-420.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+
+/*-640.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+
+/*-800.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Content-DPR: 1.0
+
+/*.avif
+  Cache-Control: public, max-age=2592000
+  Content-DPR: 1.0
+
+/*.svg
+  Cache-Control: public, max-age=2592000
+
+# Favicon - Cache por 1 semana
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+/favicon.svg
+  Cache-Control: public, max-age=604800
+
+# PDFs e documentos - Cache por 1 mês
+/*.pdf
+  Cache-Control: public, max-age=2592000
+
+# HTML files - Cache por 1 hora (para permitir atualizações rápidas)
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Service Worker - Sem cache
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Manifest - Cache por 1 dia
+/manifest.json
+  Cache-Control: public, max-age=86400
+
+# Security headers para todos os arquivos
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

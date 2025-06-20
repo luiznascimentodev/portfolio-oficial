@@ -1,0 +1,16 @@
+# Garantir que as páginas da SPA funcionem
+/*    /index.html   200
+
+# Redirecionamentos para assets - converter caminhos /src/ para assets do build
+/src/assets/*  /assets/images/:splat  200
+/src/components/*  /assets/js/:splat  200
+/src/entries/*  /assets/js/:splat  200
+
+# Favicon
+/favicon.ico  /favicon.svg  200
+
+# Permitir que assets importados sejam encontrados
+/assets/*.vue  /assets/js/:splat.js  200
+
+# 404 para recursos não encontrados
+/assets/Navigation-*.vue  /404.html  404

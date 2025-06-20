@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicon moderno e responsivo -->
+    <link rel="icon" type="image/svg+xml" href="/src/public/favicon.svg" />
+    <link rel="alternate icon" href="/src/public/favicon.svg" />
+    <link rel="apple-touch-icon" href="/src/public/favicon.svg" />
+    <link rel="manifest" href="/src/public/manifest.json" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <meta name="description" content="Portfólio de Luiz Nascimento - Desenvolvedor Web Fullstack especializado em criar soluções digitais modernas. Transformo ideias em experiências web únicas." />
+    <meta name="keywords" content="Luiz Nascimento, desenvolvedor fullstack, desenvolvedor web, portfolio, Vue.js, JavaScript, desenvolvimento web, programador" />
+    <meta name="author" content="Luiz Nascimento" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#3B82F6" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Mobile optimizations -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Luiz Nascimento | Desenvolvedor Web Fullstack - Portfolio</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luiznascimento.dev/" />
+    <meta property="og:title" content="Luiz Nascimento | Desenvolvedor Web Fullstack - Portfolio" />
+    <meta property="og:description" content="Transformo ideias em soluções digitais modernas. Desenvolvedor Fullstack especializado em criar experiências web únicas com foco em performance e usabilidade." />
+    <meta property="og:image" content="https://luiznascimento.dev/src/assets/portfolio.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://luiznascimento.dev/" />
+    <meta property="twitter:title" content="Luiz Nascimento | Desenvolvedor Web Fullstack - Portfolio" />
+    <meta property="twitter:description" content="Transformo ideias em soluções digitais modernas. Desenvolvedor Fullstack especializado em criar experiências web únicas com foco em performance e usabilidade." />
+    <meta property="twitter:image" content="https://luiznascimento.dev/src/assets/portfolio.png" />
+
+    <!-- DNS Prefetch and Preconnect - Otimização crítica -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Resource Hints - Preload crítico para LCP -->
+    <link rel="preload" href="/src/assets/avatar-img-original-lcp.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="preload" href="/src/assets/avatar-img-original-150.webp" as="image" type="image/webp" media="(max-width: 480px)" fetchpriority="high" />
+    <link rel="preload" href="/src/assets/avatar-img-original-300.webp" as="image" type="image/webp" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" href="/src/assets/avatar-img-original-420.webp" as="image" type="image/webp" media="(max-width: 1024px)" fetchpriority="high" />
+    <link rel="preload" href="/src/assets/avatar-img-original-640.webp" as="image" type="image/webp" media="(min-width: 1025px)" fetchpriority="high" />
+    <link rel="preload" href="/assets/main.js" as="script" fetchpriority="high" />
+
+    <!-- Strategic page prefetch (lower priority) -->
+    <link rel="prefetch" href="/servicos.html" />
+    <link rel="prefetch" href="/projetos.html" />
+    <link rel="prefetch" href="/contato.html" />
+    <link rel="prefetch" href="/curriculo.html" />
+
+    <!-- Critical CSS for immediate render - Optimized for Core Web Vitals -->
+    <style>
+      /* Critical CSS for initial render */
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background-color: #111827;
+        color: #f3f4f6;
+      }
+
+      /* Loading spinner styles */
+      .loading-spinner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #111827;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #3b82f6;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: spin 0.6s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Hide Vue app until loaded */
+      [v-cloak] {
+        display: none;
+      }
+
+      /* Image optimization */
+      img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        font-style: italic;
+        background-repeat: no-repeat;
+        background-size: cover;
+        shape-margin: 0.75rem;
+      }
+
+      /* Prevent CLS with aspect ratios */
+      .aspect-square {
+        aspect-ratio: 1 / 1;
+      }
+
+      /* Performance optimizations */
+      .gpu-accelerated {
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+
+      .will-change-transform {
+        will-change: transform;
+      }
+
+      .will-change-opacity {
+        will-change: opacity;
+      }
+    </style>
+
+    <!-- Preload helper script -->
+    <script>
+      // Helper para resolver URLs de assets
+      window.__resolveAssetUrl = (url) => {
+        // Adiciona suporte a srcset para imagens responsivas
+        if (url.includes('avatar-img')) {
+          const srcset = [
+            '/src/assets/avatar-img-150.webp 150w',
+            '/src/assets/avatar-img-300.webp 300w',
+            '/src/assets/avatar-img-420.webp 420w',
+            '/src/assets/avatar-img-640.webp 640w',
+            '/src/assets/avatar-img-800.webp 800w'
+          ].join(', ');
+
+          return {
+            srcset,
+            src: url
+          };
+        }
+        return url;
+      };
+
+      // Otimização de carregamento de imagens
+      document.addEventListener('DOMContentLoaded', () => {
+        // Lazy load para imagens não críticas
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        if ('IntersectionObserver' in window) {
+          const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.srcset) {
+                  img.srcset = img.dataset.srcset;
+                }
+                if (img.dataset.src) {
+                  img.src = img.dataset.src;
+                }
+                img.classList.remove('lazy');
+                imageObserver.unobserve(img);
+              }
+            });
+          });
+
+          lazyImages.forEach(img => imageObserver.observe(img));
+        }
+      });
+    </script>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luiz Nascimento",
+      "jobTitle": "Desenvolvedor Web Fullstack",
+      "description": "Desenvolvedor Fullstack especializado em criar soluções digitais modernas com foco em performance, usabilidade e design responsivo.",
+      "url": "https://luiznascimento.dev",
+      "sameAs": [
+        "https://linkedin.com/in/luiz-nascimento-dev",
+        "https://github.com/luiz-nascimento-dev"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "Vue.js",
+        "Node.js",
+        "PHP",
+        "Python",
+        "Desenvolvimento Web",
+        "Frontend",
+        "Backend",
+        "Fullstack Development"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-gray-900">
+    <!-- Loading spinner shown before Vue app loads -->
+    <div id="loading-spinner" class="loading-spinner">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Vue App Container -->
+    <div id="app" v-cloak></div>
+
+    <!-- Hide loading spinner when Vue is ready -->
+    <script type="module" src="/src/entries/main.js"></script>
+
+    <!-- Service Worker registration (optional and robust) -->
+    <script>
+      if ('serviceWorker' in navigator && 'caches' in window) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('SW registered successfully:', registration.scope);
+              // Opcional: verificar atualizações
+              registration.addEventListener('updatefound', () => {
+                console.log('SW update found');
+              });
+            })
+            .catch(error => {
+              console.warn('SW registration failed:', error);
+              // Não bloquear a aplicação se SW falhar
+            });
+        });
+      } else {
+        console.log('Service Worker not supported');
+      }
+    </script>
+  </body>
+</html>

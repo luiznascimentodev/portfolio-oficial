@@ -1,0 +1,31 @@
+/* Favicon README - Implementação
+ *
+ * Este favicon foi criado com as seguintes características:
+ *
+ * 🎨 DESIGN:
+ * - Símbolo: Brackets de código estilizados < | >
+ * - Cores: Azul (#3B82F6) e Verde (#10B981) - cores principais do site
+ * - Fundo: Gradient escuro com bordas arredondadas modernas
+ *
+ * 🔧 RECURSOS TÉCNICOS:
+ * - Formato SVG (escalável e leve)
+ * - Responsivo a dark/light mode
+ * - Efeito glow para destaque
+ * - Elementos decorativos de circuito
+ *
+ * 📱 COMPATIBILIDADE:
+ * - Navegadores modernos (SVG suport)
+ * - PWA ready com manifest.json
+ * - Apple touch icon compatible
+ * - Meta tags otimizadas
+ *
+ * 🚀 PERFORMANCE:
+ * - Arquivo leve (~2KB)
+ * - Vetorial (sem pixelização)
+ * - Cache-friendly
+ *
+ * Para gerar versões PNG se necessário:
+ * 1. Abrir favicon.svg no navegador
+ * 2. Capturar em 192x192 e 512x512
+ * 3. Salvar como favicon-192.png e favicon-512.png
+ */

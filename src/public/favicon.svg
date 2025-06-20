@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes principais -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Sombra suave -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Estilo responsivo para dark/light mode -->
+    <style>
+      @media (prefers-color-scheme: dark) {
+      .favicon-bg { fill: url(#bgGradient); }
+      .favicon-primary { stroke: url(#codeGradient); fill: url(#codeGradient); }
+      .favicon-accent { fill: url(#accentGradient); }
+      }
+      @media (prefers-color-scheme: light) {
+      .favicon-bg { fill: #F8FAFC; }
+      .favicon-primary { stroke: #1E40AF; fill: #1E40AF; }
+      .favicon-accent { fill: #059669; }
+      }
+    </style>
+  </defs>
+
+  <!-- Fundo com bordas arredondadas -->
+  <rect class="favicon-bg" width="512" height="512" rx="96" ry="96" />
+
+  <!-- Elementos decorativos de circuito -->
+  <circle cx="128" cy="128" r="8" class="favicon-accent" opacity="0.6" />
+  <circle cx="384" cy="128" r="6" class="favicon-accent" opacity="0.4" />
+  <circle cx="384" cy="384" r="8" class="favicon-accent" opacity="0.6" />
+  <circle cx="128" cy="384" r="6" class="favicon-accent" opacity="0.4" />
+
+  <!-- Linhas de conexão sutis -->
+  <line x1="128" y1="128" x2="200" y2="200" class="favicon-primary" stroke-width="3" opacity="0.3" />
+  <line x1="384" y1="128" x2="312" y2="200" class="favicon-primary" stroke-width="3" opacity="0.3" />
+
+  <!-- Símbolo principal: Brackets estilizados com barra -->
+  <g filter="url(#glow)">
+    <!-- Bracket esquerdo -->
+    <path
+      d="M 160 180 L 120 220 L 120 292 L 160 332"
+      class="favicon-primary"
+      stroke-width="24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+
+    <!-- Bracket direito -->
+    <path
+      d="M 352 180 L 392 220 L 392 292 L 352 332"
+      class="favicon-primary"
+      stroke-width="24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+
+    <!-- Barra central com efeito -->
+    <line
+      x1="180" y1="256" x2="332" y2="256"
+      class="favicon-primary"
+      stroke-width="16"
+      stroke-linecap="round"
+    />
+
+    <!-- Pontos de código -->
+    <circle cx="200" cy="240" r="4" class="favicon-accent" />
+    <circle cx="256" cy="240" r="4" class="favicon-accent" />
+    <circle cx="312" cy="240" r="4" class="favicon-accent" />
+  </g>
+
+  <!-- Elementos tech adicionais -->
+  <rect x="220" y="360" width="72" height="12" rx="6" class="favicon-accent" opacity="0.5" />
+  <rect x="240" y="380" width="32" height="8" rx="4" class="favicon-primary" opacity="0.5" />
+</svg>
