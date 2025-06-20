@@ -96,7 +96,6 @@ export default {
         demo: 'https://demo-gerenciador.vercel.app',
         github: 'https://github.com/luiznascimentodev/gerenciador',
         status: 'Concluído',
-        category: 'Full Stack',
         features: [
           'Dashboard com métricas em tempo real',
           'Sistema de autenticação JWT',
@@ -114,7 +113,6 @@ export default {
         demo: 'https://obelico.com.br',
         github: null,
         status: 'Concluído',
-        category: 'Frontend',
         features: [
           'Design responsivo e moderno',
           'Otimização SEO avançada',
@@ -132,7 +130,6 @@ export default {
         demo: null,
         github: 'https://github.com/luiznascimentodev/ecommerce',
         status: 'Em Desenvolvimento',
-        category: 'Full Stack',
         features: [
           'Carrinho de compras persistente',
           'Integração com Stripe para pagamentos',
@@ -140,6 +137,72 @@ export default {
           'Sistema de avaliações de produtos',
           'PWA com funcionamento offline'
         ]
+      },
+      {
+        id: 4,
+        title: "Dashboard Analytics",
+        description: "Interface administrativa com visualização de dados em tempo real, gráficos interativos e relatórios customizáveis para análise de métricas.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&auto=format",
+        status: "Concluído",
+        technologies: ["React", "D3.js", "Chart.js", "Material-UI", "Redux"],
+        demo: "https://dashboard-analytics.com",
+        github: "https://github.com/luiz/dashboard-analytics",
+        features: ["Gráficos interativos", "Tempo real", "Exports customizados"]
+      },
+      {
+        id: 5,
+        title: "API REST Completa",
+        description: "API robusta com autenticação, documentação automática, cache Redis, rate limiting e monitoramento para aplicações escaláveis.",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&auto=format",
+        status: "Concluído",
+        technologies: ["Node.js", "Express", "PostgreSQL", "Redis", "Docker"],
+        demo: "https://api-docs.com",
+        github: "https://github.com/luiz/api-completa",
+        features: ["Documentação automática", "Cache otimizado", "Rate limiting"]
+      },
+      {
+        id: 6,
+        title: "Portfolio Responsivo",
+        description: "Site portfolio moderno com animações fluidas, otimização de performance, SEO avançado e integração com CMS headless.",
+        image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop&auto=format",
+        status: "Concluído",
+        technologies: ["Nuxt.js", "GSAP", "Strapi", "Netlify", "Tailwind"],
+        demo: "https://portfolio-moderno.com",
+        github: "https://github.com/luiz/portfolio-nuxt",
+        features: ["Animações GSAP", "CMS integrado", "Performance 100"]
+      },
+      {
+        id: 7,
+        title: "Plataforma E-learning",
+        description: "Sistema completo de ensino online com videoaulas, quiz interativo, certificados digitais e painel de progresso para alunos e instrutores.",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format",
+        status: "Concluído",
+        technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS S3"],
+        demo: "https://elearning-platform.com",
+        github: "https://github.com/luiz/elearning-platform",
+        features: ["Videoaulas HD", "Quiz interativo", "Certificados digitais"]
+      },
+      {
+        id: 8,
+        title: "Sistema de Delivery",
+        description: "Aplicação mobile-first para delivery de comida com rastreamento em tempo real, pagamento integrado e sistema de avaliações.",
+        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop&auto=format",
+        status: "Em Desenvolvimento",
+        technologies: ["React Native", "Firebase", "Google Maps", "Stripe", "Redux"],
+        demo: "https://delivery-app-demo.com",
+        github: "https://github.com/luiz/delivery-app",
+        features: ["Rastreamento GPS", "Pagamento mobile", "Push notifications"]
+      },
+      {
+        id: 9,
+        title: "Microserviços em Docker",
+        description: "Arquitetura de microserviços containerizada com API Gateway, service discovery, monitoramento e deploy automatizado em Kubernetes.",
+        image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=600&h=400&fit=crop&auto=format",
+        status: "Concluído",
+        technologies: ["Docker", "Kubernetes", "Go", "PostgreSQL", "Prometheus"],
+        demo: "https://microservices-demo.com",
+        github: "https://github.com/luiz/microservices-k8s",
+        features: ["Auto-scaling", "Health checks", "Logs centralizados"]
       }
     ])
 

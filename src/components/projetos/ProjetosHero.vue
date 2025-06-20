@@ -1,5 +1,5 @@
 <template>
-  <section id="projetos-hero" class="hero-section relative min-h-screen flex items-center justify-center py-16">
+  <section id="projetos-hero" class="relative min-h-screen flex items-center justify-center py-16 overflow-hidden">
     <!-- Background Comum -->
     <CommonBackground class="absolute inset-0 z-0" />
 
