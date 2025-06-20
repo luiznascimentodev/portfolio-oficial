@@ -207,14 +207,17 @@ export default {
     ])
 
     const technologies = reactive([
-      { name: 'Vue.js', icon: '💚', count: 2 },
-      { name: 'React', icon: '⚛️', count: 1 },
-      { name: 'Node.js', icon: '🟢', count: 2 },
-      { name: 'JavaScript', icon: '🟨', count: 3 },
-      { name: 'HTML/CSS', icon: '🎨', count: 3 },
-      { name: 'MySQL', icon: '🗄️', count: 2 },
-      { name: 'Firebase', icon: '🔥', count: 1 },
-      { name: 'Stripe', icon: '💳', count: 1 }
+      { name: 'HTML' },
+      { name: 'CSS' },
+      { name: 'JavaScript' },
+      { name: 'PHP' },
+      { name: 'C#' },
+      { name: 'Java' },
+      { name: 'Vue.js' },
+      { name: 'React' },
+      { name: 'Node.js' },
+      { name: 'MySQL' },
+      { name: 'PostgreSQL' }
     ])
 
     const handleScroll = () => {
