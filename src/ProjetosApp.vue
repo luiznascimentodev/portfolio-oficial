@@ -54,8 +54,9 @@ import GlobalFooter from './components/shared/GlobalFooter.vue'
 import ProjetosHero from './components/projetos/ProjetosHero.vue'
 import LoadingSpinner from './components/ui/LoadingSpinner.vue'
 
-// Importar a imagem do projeto OBelico
+// Importar as imagens dos projetos
 import obelicoImage from './assets/projetos/obelico/pagina-inicial-card.webp'
+import barbeariaImage from './assets/projetos/barbearia/pagina-inicial.webp'
 
 // Utilidades para métricas de carregamento
 import { reportLoadingMetrics } from './utils/loadingMetrics'
@@ -133,25 +134,45 @@ export default {
         challenges: 'O principal desafio foi criar uma plataforma que se destacasse em um mercado altamente regulamentado, onde a confiança é fundamental. Desenvolvi uma estratégia de UX que equilibra profissionalismo e inovação, implementando técnicas avançadas de microcopy e design persuasivo para estabelecer credibilidade instantânea e guiar os usuários para a conversão.',
         results: 'Os resultados superaram todas as expectativas: aumento de 65% no tráfego orgânico, crescimento de 40% na taxa de conversão e redução de 70% no custo de aquisição de clientes em apenas três meses. A Agência OBelico relata que 83% dos novos clientes agora mencionam o site como fator decisivo na escolha da empresa, consolidando o projeto como um caso de sucesso absoluto em transformação digital.'
       },
-      {
+     {
         id: 2,
-        title: 'Dashboard Analytics',
-        description: 'Painel de análise de dados em tempo real com visualizações interativas, relatórios personalizados e integrações com múltiplas fontes de dados.',
-        image: 'https://via.placeholder.com/800x400?text=Dashboard+Analytics',
+        title: 'Sistema de Agendamento para Barbearias',
+        description: 'Prova de conceito para sistema completo de agendamento online para barbearias, com dashboards diferenciados para clientes e barbeiros.',
+        image: barbeariaImage, // Usando a imagem importada diretamente
+        demo: 'https://luiznascimento.dev.br/barbearia/public/',
+        github: 'https://github.com/luiznascimentodev/barbearia',
+        featured: true,
+        technologies: ['PHP', 'MySQL', 'Bootstrap', 'JavaScript'],
+        features: [
+          'Login diferenciado para clientes e barbeiros',
+          'Dashboard completo para controle de agendamentos',
+          'Gestão de horários disponíveis',
+          'Interface intuitiva e responsiva'
+        ],
+        detailedDescription: 'Este projeto é uma prova de conceito desenvolvida para demonstrar um sistema completo de agendamento online para barbearias. O sistema permite que tanto clientes quanto barbeiros tenham acesso a dashboards específicos, onde podem gerenciar completamente os agendamentos, horários disponíveis e serviços oferecidos.',
+        technicalDetails: 'Desenvolvido com PHP puro seguindo o padrão MVC (Model-View-Controller), utilizando MySQL para persistência de dados e Bootstrap para interface responsiva. O sistema conta com autenticação segura, diferentes níveis de acesso e painéis administrativos personalizados para cada tipo de usuário.',
+        challenges: 'O principal desafio foi criar uma arquitetura que permitisse diferentes fluxos de trabalho para clientes e barbeiros, mantendo a segurança e a usabilidade. Implementei um sistema de autenticação robusto e interfaces diferenciadas que atendem às necessidades específicas de cada perfil de usuário.',
+        results: 'A prova de conceito demonstra com sucesso como um sistema de agendamento pode otimizar o trabalho de barbearias, permitindo controle total sobre horários, reduzindo conflitos de agendamento e melhorando a experiência do cliente através de uma interface moderna e intuitiva.'
+      },
+      {
+        id: 3,
+        title: 'App Delivery',
+        description: 'Aplicativo móvel para serviço de entrega com rastreamento em tempo real, integração de pagamentos e sistema de rotas otimizadas.',
+        image: 'https://via.placeholder.com/800x400?text=App+Delivery',
         demo: '#',
         github: '#',
         featured: true,
-        technologies: ['React', 'D3.js', 'Express', 'Firebase'],
+        technologies: ['React Native', 'Firebase', 'Stripe', 'Google Maps API'],
         features: [
-          'Visualização de dados em tempo real',
-          'Painéis personalizáveis',
-          'Relatórios automatizados',
-          'Integrações com APIs externas'
+          'Rastreamento em tempo real',
+          'Pagamentos integrados',
+          'Rotas otimizadas',
+          'Notificações push'
         ],
-        detailedDescription: 'O Dashboard Analytics foi desenvolvido para uma empresa de marketing digital que precisava visualizar e analisar grandes volumes de dados de campanhas publicitárias em tempo real. O sistema centraliza informações de múltiplas plataformas e permite análises avançadas com interface intuitiva.',
-        technicalDetails: 'Implementado com React para a interface do usuário, utilizando Hooks e Context API para gerenciamento de estado. A visualização de dados é construída com D3.js, permitindo gráficos interativos e personalizáveis. O backend foi desenvolvido com Node.js e Express, com banco de dados Firebase Realtime Database para atualizações em tempo real.',
-        challenges: 'O principal desafio foi garantir a performance ao processar e renderizar grandes volumes de dados em tempo real. Implementei técnicas de virtualização e paginação para garantir que o carregamento e a interação permanecessem fluidos mesmo com milhares de registros.',
-        results: 'O dashboard reduziu o tempo de análise de dados em aproximadamente 70%, permitindo que a equipe de marketing tomasse decisões mais rápidas e precisas, resultando em um aumento de 25% na eficiência das campanhas.'
+        detailedDescription: 'O App Delivery foi desenvolvido para uma rede local de restaurantes que buscava uma solução personalizada para gerenciar suas entregas. O aplicativo permite aos clientes fazer pedidos, acompanhar o status em tempo real e aos entregadores otimizar suas rotas para entregas mais rápidas.',
+        technicalDetails: 'Desenvolvido com React Native para garantir compatibilidade com Android e iOS a partir de uma única base de código. Utiliza Firebase para autenticação, Firestore para banco de dados em tempo real, e Cloud Functions para processamento em background. A integração com Google Maps API permite o cálculo de rotas otimizadas e rastreamento em tempo real.',
+        challenges: 'Um dos maiores desafios foi implementar o sistema de rastreamento em tempo real mantendo o consumo de bateria em níveis aceitáveis. Desenvolvi um algoritmo personalizado que ajusta a frequência de atualização da localização com base no movimento do dispositivo e na proximidade do destino.',
+        results: 'O aplicativo resultou em uma redução de 30% no tempo médio de entrega e um aumento de 45% na satisfação dos clientes, conforme medido por pesquisas pós-entrega.'
       },
       {
         id: 3,
