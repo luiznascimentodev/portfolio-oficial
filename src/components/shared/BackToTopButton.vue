@@ -8,6 +8,7 @@
     leave-to-class="opacity-0 scale-90 translate-y-2"
   >
     <button
+      v-if="show"
       class="back-to-top-btn"
       @click="scrollToTop"
       title="Voltar ao topo da página"
@@ -35,6 +36,12 @@
 <script>
 export default {
   name: 'BackToTopButton',
+  props: {
+    show: {
+      type: Boolean,
+      default: false
+    }
+  },
   methods: {
     scrollToTop() {
       window.scrollTo({

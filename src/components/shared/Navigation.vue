@@ -1,7 +1,7 @@
 <template>
   <nav :class="[
     'w-full z-50 transition-all duration-200',
-    isScrolled ? 'fixed top-0 left-0 right-0 shadow-lg bg-gray-900/95 backdrop-blur-xl border-b border-blue-900/30' : 'relative bg-gray-900/90 backdrop-blur-lg border-b border-gray-800'
+    isScrolled ? 'fixed top-0 left-0 right-0 shadow-lg bg-gray-950/90 backdrop-blur-sm border-b border-blue-900/30' : 'relative bg-gray-950/90 backdrop-blur-sm border-b border-gray-800'
   ]">
     <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
       <div class="flex items-center h-14 sm:h-16">
@@ -125,7 +125,8 @@ export default {
   },
   props: {
     mobileMenuOpen: Boolean,
-    navigation: Array
+    navigation: Array,
+    isScrolled: Boolean
   },
   setup(props, { emit }) {
     const isScrolled = ref(false)

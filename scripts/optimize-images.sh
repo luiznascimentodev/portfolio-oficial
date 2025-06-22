@@ -140,14 +140,14 @@ process_avatars() {
     echo "Procurando por imagens de avatar em $SRC_DIR..."
 
     # Verificar se existem arquivos correspondentes ao padrão
-    if ! ls "$SRC_DIR"/avatar-img* &>/dev/null; then
+    if ! ls "$SRC_DIR"/avatar/avatar-img* &>/dev/null; then
         echo "ERRO: Nenhuma imagem de avatar encontrada em $SRC_DIR!"
         echo "Arquivos disponíveis:"
         ls -la "$SRC_DIR"
         exit 1
     fi
 
-    avatars=("$SRC_DIR"/avatar-img*)
+    avatars=("$SRC_DIR"/avatar/avatar-img*)
     echo "Encontradas ${#avatars[@]} imagens de avatar."
 
     for avatar in "${avatars[@]}"; do

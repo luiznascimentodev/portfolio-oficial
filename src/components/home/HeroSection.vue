@@ -170,14 +170,14 @@ import CommonBackground from '../ui/CommonBackground.vue'
 import OptimizedImage from '../ui/OptimizedImage.vue'
 
 // Importar as imagens corretamente para que o Vite as processe
-import avatarMain from '@/assets/avatar-img-original-640.webp'
-import avatarLcp from '@/assets/avatar-img-original-lcp.webp'
-import avatar150 from '@/assets/avatar-img-original-150.webp'
-import avatar300 from '@/assets/avatar-img-original-300.webp'
-import avatar420 from '@/assets/avatar-img-original-420.webp'
-import avatar640 from '@/assets/avatar-img-original-640.webp'
-import avatar800 from '@/assets/avatar-img-original-800.webp'
-import avatarFallback from '@/assets/avatar-img-original-compressed.png'
+import avatarMain from '@/assets/avatar/avatar-img-original-640.webp'
+import avatarLcp from '@/assets/avatar/avatar-img-original-lcp.webp'
+import avatar150 from '@/assets/avatar/avatar-img-original-150.webp'
+import avatar300 from '@/assets/avatar/avatar-img-original-300.webp'
+import avatar420 from '@/assets/avatar/avatar-img-original-420.webp'
+import avatar640 from '@/assets/avatar/avatar-img-original-640.webp'
+import avatar800 from '@/assets/avatar/avatar-img-original-800.webp'
+import avatarFallback from '@/assets/avatar/avatar-img-original-compressed.png'
 
 const props = defineProps({
   stats: Array,

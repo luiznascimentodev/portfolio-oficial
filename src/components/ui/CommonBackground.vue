@@ -1,5 +1,5 @@
 <template>
-  <div class="advanced-code-particles">
+  <div class="advanced-code-particles bg-gray-950/90 backdrop-blur-sm">
     <!-- Terminal/IDE Style Particles -->
     <div
       v-for="terminal in terminalParticles"
