@@ -226,7 +226,7 @@
             <p class="text-gray-400 text-sm">Sim! 30 dias de suporte gratuito incluído. Após isso, oferecemos planos de manutenção mensais.</p>
           </div>          <div class="bg-gray-900 rounded-2xl p-6 shadow-lg border border-gray-700 text-left">
             <h4 class="text-lg font-semibold text-white mb-3">Trabalha com que tecnologias?</h4>
-            <p class="text-gray-400 text-sm">Vue.js, React, Node.js, Python, PHP, WordPress e mais. Escolhemos a melhor tecnologia para cada projeto.</p>
+            <p class="text-gray-400 text-sm">Vue.js, React, Node.js, PHP, WordPress e mais. Escolhemos a melhor tecnologia para cada projeto.</p>
           </div>
         </div>
       </div>

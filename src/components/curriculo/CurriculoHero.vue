@@ -122,29 +122,8 @@
 
           <!-- Key Credentials -->
 
-          <!-- Download CV and Ver Competências -->
-          <div class="flex flex-wrap gap-4 justify-center lg:justify-start print:hidden relative z-50">
-            <a href="/src/assets/luiz-nascimento-desenvolvedor-fullstack.pdf" target="_blank"
-               class="group inline-flex items-center justify-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-base font-medium rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 relative z-50">
-              <svg class="w-5 h-5 mr-2 group-hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              <span>Download CV</span>
-              <svg class="w-5 h-5 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-              </svg>
-            </a>
-            <a href="#skills-section"
-               class="group inline-flex items-center justify-center px-5 py-2.5 bg-gray-800 border border-gray-700 hover:border-blue-600 text-white text-base font-medium rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 relative z-50">
-              <svg class="w-5 h-5 mr-2 group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              <span>Ver Competências</span>
-              <svg class="w-5 h-5 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.75">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-              </svg>
-            </a>
-          </div>
+
+
         </div>
       </div>
 
@@ -155,7 +134,7 @@
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
           </svg>
-          luiznascimentodev@gmail.com
+          luiznascdev@gmail.com
         </div>
         <div class="flex items-center">
           <svg class="w-4 h-4 mr-1.5" fill="currentColor" viewBox="0 0 20 20">

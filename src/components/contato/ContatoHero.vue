@@ -204,40 +204,6 @@
           </div>
         </div>
 
-        <!-- Call-to-Action Final -->
-        <div class="pt-12 space-y-6">
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#contact-form"
-               class="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-700 hover:to-emerald-800 text-white font-bold rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25">
-              <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-              </svg>
-              <span>Enviar Mensagem</span>
-              <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-              </svg>
-            </a>
-
-            <a href="/curriculo.html"
-               class="group inline-flex items-center gap-3 px-8 py-4 bg-gray-800 border-2 border-gray-700 hover:border-blue-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <svg class="w-5 h-5 group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-              </svg>
-              <span>Ver Experiência</span>
-              <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Status Badge Final -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-900/30 border border-emerald-700/30 text-emerald-300 text-sm font-medium">
-            <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-            <span>Online agora</span>
-            <span class="text-emerald-400">•</span>
-            <span class="text-gray-400">Pronto para começar seu projeto</span>
-          </div>
-        </div>
       </div>
     </div>
   </section>

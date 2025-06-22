@@ -64,29 +64,7 @@
               </a>
             </div>
 
-            <!-- Additional Links -->
-            <div class="pt-6 border-t border-gray-700/30">
-              <div class="flex flex-wrap justify-center gap-6 text-sm">
-                <a href="/curriculo.html" class="group flex items-center text-gray-400 hover:text-white transition-colors duration-300">
-                  <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
-                  </svg>
-                  Ver Experiência Completa
-                </a>
-                <a href="/servicos.html" class="group flex items-center text-gray-400 hover:text-white transition-colors duration-300">
-                  <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/>
-                  </svg>
-                  Conhecer Serviços
-                </a>
-                <a href="/" class="group flex items-center text-gray-400 hover:text-white transition-colors duration-300">
-                  <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
-                  </svg>
-                  Voltar ao Início
-                </a>
-              </div>
-            </div>
+       
           </div>
         </div>
       </div>

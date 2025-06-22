@@ -71,7 +71,7 @@
                 </svg>
               </div>
             </div>
-            <div class="text-3xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">98+</div>
+            <div class="text-3xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">90+</div>
             <div class="text-sm text-gray-400 font-medium">Performance Score</div>
           </div>
         </div>

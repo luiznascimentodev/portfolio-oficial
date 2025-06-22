@@ -82,7 +82,7 @@
           <div
             v-for="skill in skills"
             :key="skill.name"
-            class="group relative overflow-hidden bg-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-3xl p-8 hover:border-gray-600/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+            class="group relative overflow-hidden bg-gray-900/80 backdrop-blur-sm border border-gray-700/50 rounded-3xl p-8 pb-10 hover:border-gray-600/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
           >
             <!-- Background gradient overlay -->
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -173,9 +173,8 @@
                 </p>
               </div>
 
-              <!-- Hover indicator -->
-              <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-8 h-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"
-                   :class="skill.textColor.replace('text-', 'bg-')"></div>
+
+
             </div>
 
             <!-- Shine effect -->
@@ -237,41 +236,41 @@
           <div class="relative z-10">
             <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 md:mb-5 drop-shadow-md">
               Pronto para <span class="relative inline-block">
-                elevar seu projeto
+                transformar ideias
                 <span class="absolute bottom-0 left-0 w-full h-1 sm:h-1.5 bg-gradient-to-r from-blue-500/80 to-emerald-500/80 rounded-full"></span>
-              </span> ao próximo nível?
+              </span> em resultados?
             </h3>
 
             <p class="text-base sm:text-lg md:text-xl mb-5 sm:mb-6 md:mb-8 opacity-95 max-w-2xl mx-auto leading-relaxed">
-              Transforme suas ideias em <span class="font-medium text-blue-300">soluções digitais</span> de alto impacto.
-              <span class="font-semibold bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent inline-block">Disponível para novos projetos e oportunidades.</span>
+              Combine minha <span class="font-medium text-blue-300">expertise técnica</span> com sua visão de negócio.
+              <span class="font-semibold bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent inline-block">Crie soluções digitais que impulsionam seu crescimento.</span>
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center relative z-10">
               <a
-                href="#contato"
-                class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium sm:font-bold rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl hover:shadow-blue-500/20 transform hover:translate-y-[-2px] sm:hover:translate-y-[-3px] hover:scale-[1.03] sm:hover:scale-105 transition-all duration-300 group border border-blue-400/30 text-sm sm:text-base"
+                href="/contato.html"
+                class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                <span class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent rounded-xl sm:rounded-2xl z-[-1] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8-9-8s9 3.582 9 8z" />
+                <svg class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
-                Iniciar Colaboração
-                <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                Iniciar Projeto
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                 </svg>
               </a>
 
               <a
                 href="/curriculo.html"
-                class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gray-900/50 border-2 border-emerald-500/30 hover:border-emerald-500/50 text-white font-medium sm:font-bold rounded-xl sm:rounded-2xl hover:bg-emerald-500/10 transition-all duration-300 group backdrop-blur-sm relative overflow-hidden text-sm sm:text-base"
-                target="_blank"
+                class="group inline-flex items-center justify-center px-8 py-4 bg-gray-800 border-2 border-gray-700 hover:border-emerald-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                <span class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-transparent rounded-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
-                <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 transition-transform duration-300 group-hover:scale-110 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <svg class="w-5 h-5 mr-2 group-hover:animate-pulse text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 Ver Qualificações
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
 
               </a>
             </div>
