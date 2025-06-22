@@ -255,7 +255,7 @@
         <!-- Footer com ações modernas -->
         <div class="border-t border-gray-800/30 p-5 flex justify-between items-center">
           <div class="text-xs text-gray-500 italic">
-            
+
           </div>
 
           <div class="flex gap-3">
@@ -307,6 +307,7 @@
 <script>
 import { ref } from 'vue'
 
+
 export default {
   name: 'ProjectDetails',
   props: {
@@ -328,7 +329,7 @@ export default {
 
     return {
       activeTab,
-      tabs
+      tabs,
     }
   },
   mounted() {

@@ -54,6 +54,9 @@ import GlobalFooter from './components/shared/GlobalFooter.vue'
 import ProjetosHero from './components/projetos/ProjetosHero.vue'
 import LoadingSpinner from './components/ui/LoadingSpinner.vue'
 
+// Importar a imagem do projeto OBelico
+import obelicoImage from './assets/projetos/obelico/pagina-inicial-card.webp'
+
 // Utilidades para métricas de carregamento
 import { reportLoadingMetrics } from './utils/loadingMetrics'
 
@@ -114,7 +117,7 @@ export default {
         id: 1,
         title: 'Agência OBelico',
         description: 'Desenvolvi um projeto para a Agência OBelico, especializada em serviços de despachante de armas, com foco em uma interface moderna, intuitiva e otimizada para SEO.',
-        image: '/src/assets/projetos/obelico/pagina-inicial-card.webp',
+        image: obelicoImage, // Usando a imagem importada diretamente
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'SEO', 'Responsive Design'],
         demo: 'https://obelico.com.br/',
         github: 'https://github.com/luiznascimentodev/Obelico',

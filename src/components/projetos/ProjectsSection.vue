@@ -188,6 +188,7 @@
 import { ref, computed, watch } from 'vue'
 import CommonBackground from '../ui/CommonBackground.vue'
 
+
 const props = defineProps({
   projects: {
     type: Array,

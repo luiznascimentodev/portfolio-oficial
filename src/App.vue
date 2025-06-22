@@ -55,6 +55,9 @@ import HeroSection from './components/home/HeroSection.vue'
 import AboutSection from './components/home/AboutSection.vue'
 import ProjectsWrapper from './components/home/ProjectsWrapper.vue'
 
+// Importar a imagem do projeto OBelico
+import obelicoImage from './assets/projetos/obelico/pagina-inicial-card.webp'
+
 export default {
   name: 'App',
   components: {
@@ -140,7 +143,7 @@ export default {
         id: 1,
         title: 'Agência OBelico',
         description: 'Desenvolvi um projeto para a Agência OBelico, especializada em serviços de despachante de armas, com foco em uma interface moderna, intuitiva e otimizada para SEO.',
-        image: '/src/assets/projetos/obelico/pagina-inicial-card.webp',
+        image: obelicoImage, // Usando a imagem importada diretamente
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'SEO', 'Responsive Design'],
         demo: 'https://obelico.com.br/',
         github: 'https://github.com/luiznascimentodev/Obelico',
@@ -281,7 +284,7 @@ export default {
       currentPage.value = page
     }
 
-    // Função para ir para a próxima página
+    // Função para ir para the próxima página
     const nextPage = () => {
       if (currentPage.value < totalPages.value) {
         currentPage.value++

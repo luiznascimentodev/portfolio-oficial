@@ -267,6 +267,7 @@ import { computed, defineAsyncComponent } from 'vue'
 import ProjectDetails from './ProjectDetails.vue'
 import CommonBackground from '../ui/CommonBackground.vue'
 
+
 export default {
   name: 'ProjectsWrapper',
   components: {
@@ -304,9 +305,24 @@ export default {
       return props.projects.find(project => project.id === props.expandedProjectId)
     })
 
+    const getCorrectImagePath = (path) => {
+      // Se o caminho já for uma URL completa (placeholder ou externa), retorna como está
+      if (path.startsWith("http") || path.startsWith("https")) {
+        return path;
+      }
+
+      // Para caminhos relativos começando com /, remover a / inicial
+      if (path.startsWith("/assets/")) {
+        return path.substring(1);
+      }
+
+      return path;
+    }
+
     return {
       ProjectsSectionComponent,
-      selectedProject
+      selectedProject,
+      getCorrectImagePath,
     }
   }
 }
