@@ -199,67 +199,8 @@ export default {
         technicalDetails: 'Desenvolvido com React Native para garantir compatibilidade com Android e iOS a partir de uma única base de código. Utiliza Firebase para autenticação, Firestore para banco de dados em tempo real, e Cloud Functions para processamento em background. A integração com Google Maps API permite o cálculo de rotas otimizadas e rastreamento em tempo real.',
         challenges: 'Um dos maiores desafios foi implementar o sistema de rastreamento em tempo real mantendo o consumo de bateria em níveis aceitáveis. Desenvolvi um algoritmo personalizado que ajusta a frequência de atualização da localização com base no movimento do dispositivo e na proximidade do destino.',
         results: 'O aplicativo resultou em uma redução de 30% no tempo médio de entrega e um aumento de 45% na satisfação dos clientes, conforme medido por pesquisas pós-entrega.'
-      },
-      {
-        id: 4,
-        title: 'E-commerce Vue Shop',
-        description: 'Plataforma de e-commerce moderna desenvolvida com Vue.js e Nuxt, com sistema de carrinho inteligente, pagamentos integrados e painel administrativo completo.',
-        image: 'https://via.placeholder.com/800x400?text=Vue+E-commerce',
-        demo: '#',
-        github: '#',
-        featured: true,
-        technologies: ['Vue.js', 'Nuxt.js', 'Tailwind CSS', 'Strapi', 'Stripe'],
-        features: [
-          'Carrinho de compras em tempo real',
-          'Checkout seguro com Stripe',
-          'Painel administrativo responsivo',
-          'SEO otimizado com SSR'
-        ],
-        detailedDescription: 'O Vue Shop é uma plataforma completa de e-commerce desenvolvida para oferecer uma experiência de compra fluida e moderna. Implementei recursos avançados como carrinho persistente, sistema de recomendações baseado em compras anteriores e um painel administrativo intuitivo para gerenciamento de produtos e pedidos.',
-        technicalDetails: 'O frontend foi construído com Vue.js e Nuxt.js para garantir renderização do lado do servidor (SSR), melhorando significativamente o SEO e a performance inicial. Utilizei Tailwind CSS para uma interface consistente e responsiva. O backend foi desenvolvido com Strapi, um CMS headless, que oferece uma API flexível para gerenciamento de conteúdo. A integração com Stripe garante pagamentos seguros e compatíveis com múltiplas moedas.',
-        challenges: 'O maior desafio foi implementar um sistema de carrinho que funcionasse perfeitamente entre diferentes sessões e dispositivos. Desenvolvi uma solução utilizando Vuex para gerenciamento de estado local e sincronização com o armazenamento no servidor, permitindo que os usuários continuem suas compras de qualquer dispositivo.',
-        results: 'A plataforma aumentou a taxa de conversão em 35% comparado à solução anterior, com uma redução de 60% na taxa de abandono do carrinho. O tempo de carregamento das páginas foi reduzido em 40%, melhorando significativamente a experiência do usuário e o posicionamento nos mecanismos de busca.'
-      },
-      {
-        id: 5,
-        title: 'Sistema de Gestão Financeira',
-        description: 'Aplicação web completa para controle financeiro pessoal e empresarial com dashboards interativos, relatórios customizáveis e planejamento orçamentário.',
-        image: 'https://via.placeholder.com/800x400?text=Sistema+Financeiro',
-        demo: '#',
-        github: '#',
-        featured: true,
-        technologies: ['Angular', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js'],
-        features: [
-          'Dashboards financeiros personalizáveis',
-          'Controle de receitas e despesas',
-          'Planejamento orçamentário inteligente',
-          'Relatórios e gráficos interativos'
-        ],
-        detailedDescription: 'O Sistema de Gestão Financeira foi desenvolvido para atender tanto pessoas físicas quanto empresas que precisam de uma visão clara e organizada de suas finanças. O sistema permite categorização automática de transações, criação de orçamentos, análise de tendências e geração de relatórios detalhados para tomada de decisões financeiras.',
-        technicalDetails: 'Desenvolvido com Angular e TypeScript para garantir robustez e tipagem segura no frontend. O backend utiliza Node.js com Express e MongoDB para armazenamento flexível de dados financeiros. Implementei Chart.js para visualizações gráficas interativas e responsivas. A arquitetura segue princípios de Clean Architecture, separando claramente as regras de negócio da infraestrutura.',
-        challenges: 'O principal desafio foi criar um algoritmo de categorização automática de transações que fosse preciso e adaptável às necessidades individuais dos usuários. Utilizei técnicas de machine learning para analisar padrões de gastos e sugerir categorizações, melhorando a precisão ao longo do tempo com feedback do usuário.',
-        results: 'Os usuários relataram uma economia média de 20% em seus gastos mensais após três meses de uso do sistema, graças às insights fornecidos pelos relatórios e alertas inteligentes. A satisfação dos usuários atingiu 92%, com destaque para a facilidade de uso e a clareza das informações apresentadas.'
-      },
-      {
-        id: 6,
-        title: 'Plataforma EAD Interativa',
-        description: 'Sistema completo de ensino à distância com aulas interativas, exercícios automatizados, fóruns de discussão e certificação digital para alunos e instituições.',
-        image: 'https://via.placeholder.com/800x400?text=EAD+Plataforma',
-        demo: '#',
-        github: '#',
-        featured: true,
-        technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'AWS', 'Socket.io'],
-        features: [
-          'Aulas ao vivo e gravadas',
-          'Sistema de avaliação automatizado',
-          'Fóruns de discussão em tempo real',
-          'Emissão de certificados digitais'
-        ],
-        detailedDescription: 'A Plataforma EAD Interativa foi desenvolvida para instituições de ensino que buscavam uma solução completa para oferecer cursos online. O sistema permite a criação e gerenciamento de cursos, transmissão de aulas ao vivo, disponibilização de materiais didáticos, aplicação de testes automatizados e emissão de certificados digitais verificáveis.',
-        technicalDetails: 'Utilizei Next.js para criar uma aplicação performática com SSR (Server-Side Rendering) e SSG (Static Site Generation) para conteúdos estáticos. O backend foi implementado com GraphQL para consultas eficientes e flexíveis aos dados. PostgreSQL foi escolhido como banco de dados principal por sua robustez em operações complexas. A infraestrutura é hospedada na AWS, aproveitando serviços como S3 para armazenamento de vídeos e CloudFront para distribuição de conteúdo. Socket.io foi implementado para comunicação em tempo real nos fóruns e aulas ao vivo.',
-        challenges: 'O maior desafio foi desenvolver um sistema de streaming ao vivo que funcionasse bem mesmo em conexões instáveis, mantendo a qualidade da experiência educacional. Implementei um algoritmo adaptativo que ajusta a qualidade do vídeo baseado na conexão do usuário e um sistema de recuperação que permite continuar de onde parou em caso de desconexão.',
-        results: 'A plataforma permitiu que as instituições clientes aumentassem seu alcance em 300%, atingindo estudantes de diferentes regiões. A taxa de conclusão dos cursos aumentou em 70% comparado às soluções anteriores, graças às ferramentas interativas e ao acompanhamento personalizado do progresso dos alunos.'
-      }
+      } 
+
     ])
 
     // Estado para controlar a paginação dos projetos
